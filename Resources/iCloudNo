@@ -1,0 +1,33 @@
+#Created by Kalebh Ryals for ItunesLibraryCleaner
+#Script to open iTunes, send commands, and quit itunes.
+
+open /Applications/iTunes.app
+
+osascript -e'
+
+open /Applications/iTunes.app
+
+osascript -e'
+delay 5
+activate application "iTunes"
+delay 1
+tell application "System Events"
+	key code 36 --enter
+	delay 1
+	key code 45
+	delay 1
+end tell
+activate application "Terminal"
+tell application "Terminal"
+	 close window 1
+end tell
+tell application "System Events"
+	key code 36 --enter
+end tell
+'
+
+open /Applications/iTunes.app
+
+
+
+

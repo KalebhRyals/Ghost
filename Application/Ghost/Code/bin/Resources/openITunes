@@ -1,0 +1,4 @@
+#Created by Kalebh Ryals for ItunesLibraryCleaner
+#Script to open itunes.
+
+open /Applications/iTunes.app

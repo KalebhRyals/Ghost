@@ -1,0 +1,5 @@
+#Created by Kalebh Ryals for ItunesLibraryCleaner
+#Script to quit itunes.
+
+
+osascript -e 'tell application "iTunes" to quit'

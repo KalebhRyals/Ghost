@@ -1,0 +1,15 @@
+# image and make the image its own icon:
+sips -i gst.png
+
+# Extract the icon to its own resource file:
+DeRez -only icns gst.png > tmpicns.rsrc
+
+# append this resource to the file you want to icon-ize.
+Rez -append tmpicns.rsrc -o start
+
+# Use the resource to set the icon.
+SetFile -a C start
+
+# clean up.
+rm tmpicns.rsrc
+# rm icon.png # probably want to keep this for re-use.

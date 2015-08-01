@@ -1,0 +1,21 @@
+open /Applications/iTunes.app
+osascript -e'
+delay 1
+activate application "iTunes"
+delay 1
+tell application "System Events"
+	key code 36 --enter
+	delay 1
+	key code 36
+	delay 1
+end tell
+activate application "Terminal"
+tell application "System Events"
+	key code 36 --enter
+end tell'
+
+open /Applications/iTunes.app
+
+
+
+
